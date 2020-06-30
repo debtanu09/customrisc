@@ -1,11 +1,8 @@
 #!/bin/bash
 
 python3 assembler.py
-iverilog adder.v
 iverilog alu.v
 iverilog chkeq.v
-iverilog dmem.v
-iverilog imem.v
 iverilog leftshift.v
 iverilog mem.v
 iverilog mux2.v
