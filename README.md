@@ -1,2 +1,2 @@
 # customrisc
-This is the Verilog implementation of custom RISC ISA
+This is the Verilog implementation of multi-cycled non pipelined custom RISC ISA
