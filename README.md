@@ -79,4 +79,5 @@
     Clone the project
     write the code in code.asm
     run the script run.sh
-    using 
+    
+    A program for fibonacci numbers is already uploaded in the project for testing purposes
