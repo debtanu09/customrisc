@@ -69,10 +69,10 @@
     MOV : 1011 RB RA 000000
 
 # Architecture info
-    It contains a register file of 8 register 16 bit each
+    It contains a register file of 8 register 16 bit each where R7 is the PC
     It has an ALU with ADD and NAND capabilities
     It has a single memory for instruction and data
-    Rest it has muxes, shifters, signextenders, registers, equality checker.
+    Rest it has muxes, shifters, signextenders, registers like IR and FLAG, equality checker.
     
 # How to use this
     download iverilog and gtkwave
