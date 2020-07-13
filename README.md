@@ -43,8 +43,8 @@
     2) JAL RA, IMM9 (branch to the address PC+IMM9, store PC+1 into RA, where PC is the address of the jal instruction)
     
     CUSTOM INSTRUCTION FOR EASE OF ASSEMBLY CODING
-    1) MVI RB, IMM9 (mov the data in IMM6 which is appended by 0 on the MSB to make ut 16 bit into RB)
-    2) MOV RB, RA (cpoy the data in RA to RB)
+    1) MVI RB, IMM9 (mov the data in IMM9 which is appended by 0 on the MSB to make ut 16 bit into RB)
+    2) MOV RB, RA (copy the data in RA to RB)
 
 
 
