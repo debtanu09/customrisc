@@ -73,9 +73,9 @@
     MOV : 1011 RB RA 000000
     
     LM  : 0110 RA 0-------- (dashes can be anything from 8'h0 to 8'hff) (if the bit is set the corresponding register is loaded else not loaded)
-        Ex - 0110 011 001010101 - starting address is the data in R3 and data in that mem address is loaded in R0, R1 is skipped, [address + 2] data is loaded in R2, R3 is                skipped...... so on
+    Ex - 0110 011 001010101 - starting address is the data in R3 and data in that mem address is loaded in R0, R1 is skipped, [address + 2] data is loaded in R2, R3 is skipped...... so on
     SM  : 0111 RA 0-------- (dashes can be anything from 8'h0 to 8'hff) (if the bit is set the corresponding register is stored in memory else not stored)
-        Ex - 0111 011 001010101 - starting address is the data in R3 and data in R0 is stored at [address] loacation, [address + 1] location is skipped, [address + 2]                      location is written by data in R2, [address + 3] is skipped....... so on
+    Ex - 0111 011 001010101 - starting address is the data in R3 and data in R0 is stored at [address] loacation, [address + 1] location is skipped, [address + 2] location is written by data in R2, [address + 3] is skipped....... so on
 
 # Architecture info
     It contains a register file of 8 register 16 bit each where R7 is the PC
