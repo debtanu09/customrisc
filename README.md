@@ -4,7 +4,7 @@
     
     All the instructions are 16 bit long and contains four different kind of instructions
     
-    It contains 15 instructions
+    It contains 17 instructions
 
 # Instructions format
 
@@ -45,6 +45,10 @@
     CUSTOM INSTRUCTION FOR EASE OF ASSEMBLY CODING
     1) MVI RB, IMM9 (mov the data in IMM9 which is appended by 0 on the MSB to make ut 16 bit into RB)
     2) MOV RB, RA (copy the data in RA to RB)
+    
+    CUSTOM INSTRUCTIONS FOR MULTIPLE DATA LOAD AND STORE AT A TIME
+    1) LM RA, IMM9 (Load multiple registers whose address is given in the immediate field (one bit per register, R7 to R0) in order from right to left, i.e, registers from R0                     to R7 if corresponding bit is set. Memory address is given in reg A. Registers are loaded from consecutive addresses)
+    2) SM RA, IMM9 (Store multiple registers whose address is given in the immediate field (one bit per register, R7 to R0) in order from right to left, i.e, registers from                        R0 to R7 if corresponding bit is set. Memory address is given in reg A. Registers are stored in consecutive addresses)
 
 
 
@@ -67,6 +71,11 @@
     
     MVI : 1010 RA IMM9
     MOV : 1011 RB RA 000000
+    
+    LM  : 0110 RA 0-------- (dashes can be anything from 8'h0 to 8'hff) (if the bit is set the corresponding register is loaded else not loaded)
+        Ex - 0110 011 001010101 - starting address is the data in R3 and data in that mem address is loaded in R0, R1 is skipped, [address + 2] data is loaded in R2, R3 is                skipped...... so on
+    SM  : 0111 RA 0-------- (dashes can be anything from 8'h0 to 8'hff) (if the bit is set the corresponding register is stored in memory else not stored)
+        Ex - 0111 011 001010101 - starting address is the data in R3 and data in R0 is stored at [address] loacation, [address + 1] location is skipped, [address + 2]                      location is written by data in R2, [address + 3] is skipped....... so on
 
 # Architecture info
     It contains a register file of 8 register 16 bit each where R7 is the PC
