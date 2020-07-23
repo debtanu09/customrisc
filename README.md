@@ -47,8 +47,8 @@
     2) MOV RB, RA (copy the data in RA to RB)
     
     CUSTOM INSTRUCTIONS FOR MULTIPLE DATA LOAD AND STORE AT A TIME
-    1) LM RA, IMM9 (Load multiple registers whose address is given in the immediate field (one bit per register, R7 to R0) in order from right to left, i.e, registers from R0                     to R7 if corresponding bit is set. Memory address is given in reg A. Registers are loaded from consecutive addresses)
-    2) SM RA, IMM9 (Store multiple registers whose address is given in the immediate field (one bit per register, R7 to R0) in order from right to left, i.e, registers from                        R0 to R7 if corresponding bit is set. Memory address is given in reg A. Registers are stored in consecutive addresses)
+    1) LM RA, IMM9 (Load multiple registers whose address is given in the immediate field (one bit per register, R7 to R0) in order from right to left, i.e, registers from R0 to R7 if corresponding bit is set. Memory address is given in reg A. Registers are loaded from consecutive addresses)
+    2) SM RA, IMM9 (Store multiple registers whose address is given in the immediate field (one bit per register, R7 to R0) in order from right to left, i.e, registers from R0 to R7 if corresponding bit is set. Memory address is given in reg A. Registers are stored in consecutive addresses)
 
 
 
