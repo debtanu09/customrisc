@@ -1,0 +1,20 @@
+#! /bin/bash
+
+python3 assembler.py
+iverilog alu.v
+iverilog adder.v
+iverilog equality.v
+iverilog increment.v
+iverilog memory.v
+iverilog register.v
+iverilog regfile.v
+iverilog mux2.v
+iverilog mux4.v
+iverilog mux8.v
+iverilog signex6.v
+iverilog signex9.v
+iverilog zeropad.v
+iverilog risc.v
+iverilog risc_tb.v
+vvp a.out
+#gtkwave wave.vcd
