@@ -188,7 +188,7 @@ always @(negedge clk) begin
 			if(instruction == `add || instruction == `adi || instruction == `ndu | instruction == `beq || instruction == `jal)	
 				regfilewrdata = 3'b001;
 			else if(instruction == `lhi)
-				regfilewrdata = 3'b110;
+				regfilewrdata = 3'b010;
 			else if(instruction == `jlr)
 				regfilewrdata = 3'b101;
 			else if(instruction == `mvi)
